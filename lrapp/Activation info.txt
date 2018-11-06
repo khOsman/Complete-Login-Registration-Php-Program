@@ -1,5 +1,5 @@
 Activate user 
-http://localhost/lrapp/activate.php?email=aka@gmail.com&code=5b892748d18b734dd8ed919c7748e763
+http://localhost/lrapp/activate.php?email=khanosman.iub@gmail.com&code=227a62d7a15a80c227b3cf4b9bb3cc26 
 
 Reset Pass 
-http://localhost/lrapp/code.php?email=aka@gmail.com&code=dcc3bb973a8ba23a1932b403329c8b13
+http://localhost/lrapp/code.php?email=khanosman.iub@gmail.com&code=ba1a66915f29af6ccbb6b59e8648e5a3

@@ -371,9 +371,9 @@ function recover_password(){
 
 			if (email_exists($email)){
 
-				$validation_code = md5($email + microtime());
+				$validation_code = md5($email . microtime());
 
-				setcookie('temp_access_code',$validation_code, time() + 900);
+				setcookie('temp_access_code', $validation_code, time() + 900);
 
 				$sql = "UPDATE users SET validation_code = '".escape($validation_code)."' WHERE email = '".escape($email)."' ";
 
@@ -392,13 +392,15 @@ function recover_password(){
 
 					$error_message = "Email could not be sent";
 					echo validation_errors($error_message);
-				}
+				}else{
+					$msg = "<p class='bg-success' text-center>Please check email for a password reset code</p>";
+					set_message($msg);
+
+					redirect("index.php");
+			}
 
 
-				$msg = "<p class='bg-success' text-center>Please check email for a password reset code</p>";
-				set_message($msg);
-
-				redirect("index.php");
+				
 
 
 			
