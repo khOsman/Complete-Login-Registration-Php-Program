@@ -1,0 +1,5 @@
+Activate user 
+http://localhost/lrapp/activate.php?email=aka@gmail.com&code=5b892748d18b734dd8ed919c7748e763
+
+Reset Pass 
+http://localhost/lrapp/code.php?email=aka@gmail.com&code=dcc3bb973a8ba23a1932b403329c8b13
